@@ -23,12 +23,14 @@ This is kind of silly, but until Sony's Digital Paper, there was no need to move
 In order to make workable PDFs from djvu files for use on the Digital Paper System, I have implemented in one location the following 
 procedures detailed here:
 
-By automating the procedure of user zetah for extracting the text and getting it in the correct locations:
-http://askubuntu.com/questions/46233/converting-djvu-to-pdf (OCR text transfer)
+~~By automating the procedure of user zetah for extracting the text and getting it in the correct locations:
+http://askubuntu.com/questions/46233/converting-djvu-to-pdf (OCR text transfer)~~
 
-By implementing the procedure of user pyrocrasty for extracting the outline, and putting it into the PDF generated above:
-http://superuser.com/questions/801893/converting-djvu-to-pdf-and-preserving-table-of-contents-how-is-it-possible (bookmark transfer)
+~~By implementing the procedure of user pyrocrasty for extracting the outline, and putting it into the PDF generated above:
+http://superuser.com/questions/801893/converting-djvu-to-pdf-and-preserving-table-of-contents-how-is-it-possible (bookmark transfer)~~
 
-NOTE 1: this script requires many installed toolsuites: see the above links for the requisite packages
+~~NOTE 1: this script requires many installed toolsuites: see the above links for the requisite packages
 NOTE 1.5: you will need the sexpdata Python module.  It is provided in Ubuntu under the package python-pyparsing
-NOTE 2: pdfbeads is a Ruby package.  "gem install" on an Ubuntu system will require further packages: libmagickcore-dev libmagickwand-dev
+NOTE 2: pdfbeads is a Ruby package.  "gem install" on an Ubuntu system will require further packages: libmagickcore-dev libmagickwand-dev~~
+
+To install dependencies, just execute install_dependencies.sh
