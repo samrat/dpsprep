@@ -33,4 +33,8 @@ http://superuser.com/questions/801893/converting-djvu-to-pdf-and-preserving-tabl
 NOTE 1.5: you will need the sexpdata Python module.  It is provided in Ubuntu under the package python-pyparsing
 NOTE 2: pdfbeads is a Ruby package.  "gem install" on an Ubuntu system will require further packages: libmagickcore-dev libmagickwand-dev~~
 
-To install dependencies, just execute install_dependencies.sh
+## Usage
+
+Since dpsprep requires too many dependencies and also uses legacies (_e.g._ python2), providing an requirements-installation script was not enough.
+This is the reason why installation script is no more provided and Dockerfile is provided from now on.
+A container can be built in local machine, or to use a prebuilt container (`snowphone/dpsprep`) is also okay.
