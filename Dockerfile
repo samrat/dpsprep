@@ -12,12 +12,6 @@ RUN sed -e 's/\(us.\)\?archive.ubuntu.com/ftp.daumkakao.com/g' -e 's/security.ub
 RUN apt-get update
 
 ADD ./dpsprep /usr/bin/dpsprep
-ADD ./install_dependencies.sh $HOME/install_dependencies.sh
-#RUN $HOME/install_dependencies.sh
-
-#RUN apt-get -y install software-properties-common&& \
-#		apt-add-repository -y ppa:brightbox/ruby-ng&& \
-#		apt-get update
 
 RUN apt install -y  python2.7 python-pip python2.7-dev python-virtualenv libusb-dev
 RUN apt install -y libjpeg-dev libtiff-dev ruby ruby-rmagick libmagickwand-dev
