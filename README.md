@@ -38,3 +38,11 @@ NOTE 2: pdfbeads is a Ruby package.  "gem install" on an Ubuntu system will requ
 Since dpsprep requires too many dependencies and also uses legacies (_e.g._ python2), providing an requirements-installation script was not enough.
 This is the reason why installation script is no more provided and Dockerfile is provided from now on.
 A container can be built in local machine, or to use a prebuilt container (`snowphone/dpsprep`) is also okay.
+
+Assuming you have docker installed, you can run the following to convert `~/MyDjvuFiles/foo.djvu` in your host machine to `~/MyDjvuFiles/foo.pdf`:
+
+```sh
+> docker build --tag dpsprep .
+> docker run -it --entrypoint='bash' -v ~/MyDjVuFiles:/root dpsprep
+root@a56a1f9f07fa:~# dpsprep foo.djvu foo.pdf
+```
